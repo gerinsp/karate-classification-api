@@ -32,7 +32,7 @@ pip install -r requirements.txt
 ### 4. Jalankan API
 
 ```bash
-uvicorn main_holistic:app --reload
+uvicorn main_holistic:app --host 0.0.0.0 --port 8000
 ```
 
 API akan tersedia di [http://127.0.0.1:8000](http://127.0.0.1:8000)
