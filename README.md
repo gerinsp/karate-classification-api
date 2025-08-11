@@ -35,4 +35,30 @@ pip install -r requirements.txt
 uvicorn main_holistic:app --host 0.0.0.0 --port 8000
 ```
 
-API akan tersedia di [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+atau jika ingin test menggunakan app flutter bisa menjalankan
+
+```shell
+uvicorn main_holistic:app --host 0.0.0.0 --port 8000
+```
+
+kemudian buka browser di hp pastikan di jaringan yang sama, buka alamat ip:port, contoh:
+
+```shell
+http://192.168.55.114:8000
+``` 
+
+Jika sukses maka akan muncul
+![img.png](img.png)
+
+
+Setelah itu, copy alamat url dan paste di code flutter nya di bagian
+![img_1.png](img_1.png)
+
+Jika ingin test menggunakan script python bisa menjalankan
+
+```shell
+python test_api.py
+```
+
+pastikan url diganti terlebih dahulu

@@ -66,7 +66,7 @@ async def predict_frame(req: ImageRequest):
 
         dpose_buffer.append(pts)
 
-        if len(dpose_buffer) < BUFFER_SIZE:
+        if len(dpose_buffer) < MIN_FRAME_FOR_PREDICTION:
             return PredictResponse(label="-", confidence=0.0)
 
         buf_np = np.array(dpose_buffer)
